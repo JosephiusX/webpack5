@@ -59,3 +59,15 @@ Review. webpack commands must run where they have access to the src directory. T
 Change index.html back into entry and setup some basic webpack.configuration. 
 
     npx webpack --config ../webpack.config.js
+
+3. Webpack Introduction (the Traditional Approach)
+
+        mkdir wp-intro
+        cd wp-intro
+        npm init -y
+        npm i -D webpack webpack-cli webpack-dev-server
+        mkdir src
+        touch src/entry.js
+        touch src/createElem.js
+        touch src/info.js
+        touch webpack.config.js
