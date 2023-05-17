@@ -75,3 +75,6 @@ Change index.html back into entry and setup some basic webpack.configuration.
 
 
 4. Webpack Watch & WatchOptions
+
+5. Webpack Dev Server
+Webpack dev server watches backend files in the same way that it watches frontend files. 

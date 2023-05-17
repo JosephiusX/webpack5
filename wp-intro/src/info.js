@@ -1,1 +1,1 @@
-export default 'inner text from info.js updatedhbsdfgh'
+export default 'inner text from info.js'
