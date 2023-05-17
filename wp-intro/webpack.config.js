@@ -2,39 +2,34 @@ const path = require('path')
 
 module.exports = {
     context:path.resolve(__dirname,'src'),
-    mode:'development',
-    devtool:'inline-source-map',
+    mode:'production',
+    // entry:'./entry.js',
+    // entry:['./entry.js', '.entryTwo.js'],
     entry:{
-        main:'./entry.js'
+      pageOne:{
+        import:'./entry.js',
+        filename: '.PageOne[name].js',
+        dependOn:'shared'
+      },
+      pageTwo:{
+        import: './entryTwo.js',
+        dependOn: 'shared'
+      },
+      shared:'./shared.js'
+    },
+    optimization:{
+        minimize:true, // default to true under prod. mode
+        // minimizer:['...', new plugin()] // JS, CSS, HTML
     },
     output:{
-        iife:true,
         clean:true,
         filename:'[name].js',
         path:path.resolve(__dirname,'dist')
     },
-    watchOptions:{
-        ignored:['**/node_modules']
-    },
+    watchOptions:{ignored:[path.resolve(__dirname,'node_modules')]},
     devServer:{
-      port:8080,hot:true, // dev server port and HMR
-      watchFiles:['**/src/backend/*'],
-      static: [
-        {
-          directory:path.resolve(__dirname, 'public'), // fix public directory to the project root
-          watch:true, // weather or not a static folder is watched
-          publicPath:"/" //decides where a static file will be served from
-        },
-        {
-          directory:path.resolve(__dirname, 'style'),
-          watch:false,
-          publicPath:'/style/', // string that will be prefixed to a file path.
-          serveIndex:false, // default true
-          staticOptions:{
-            index:'about.html'
-          }
+        static:{
+            directory:path.join(__dirname,'public'),
         }
-
-      ]
     }
 }

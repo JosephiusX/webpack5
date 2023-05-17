@@ -1,7 +1,6 @@
-import msg from './info.js'
 import {createElem} from './createElem.js'
 
-createElem('h1', msg)
+createElem('h2', 'content from entryTwo.js')
 
 import shared from './shared.js'
 console.log(shared)

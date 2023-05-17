@@ -85,3 +85,15 @@ Webpack comes automatically with express.
 The location of the public dir is not fixed. Webpack looks for it from the current directory. Not ideal. We want the fix the public directory to the project root. so we add the static option. 
 
 7. Deduplication
+
+To optomize build for production, set the mode to production and remove anything possible defaulting.
+
+webpack automatically deduplicates build files. 
+
+8. Multiple Entry Points
+
+Lets create a second entry point in src named "entryTwo.js
+
+    in root:
+        touch src/entryTwo.js
+        
