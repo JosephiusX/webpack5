@@ -66,10 +66,12 @@ Change index.html back into entry and setup some basic webpack.configuration.
         cd wp-intro
         npm init -y
         npm i -D webpack webpack-cli webpack-dev-server
-        mkdir src
+        mkdir src public
         touch src/entry.js
         touch src/createElem.js
         touch src/info.js
         touch webpack.config.js
+
+
 
 4. Webpack Watch & WatchOptions
