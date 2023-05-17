@@ -47,3 +47,15 @@ where webpack deveserver serves static content
 restart devserver
 
     npx webpack seve --mode development
+
+Review. webpack commands must run where they have access to the src directory. The same directory commands are run in is also where the dist defaults to. 
+
+2. Active Thinking: Reverse Engineering the Webpack Config File
+
+      in project root:
+
+        touch webpack.config
+
+Change index.html back into entry and setup some basic webpack.configuration. 
+
+    npx webpack --config ../webpack.config.js
