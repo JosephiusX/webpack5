@@ -78,3 +78,8 @@ Change index.html back into entry and setup some basic webpack.configuration.
 
 5. Webpack Dev Server
 Webpack dev server watches backend files in the same way that it watches frontend files. 
+
+6. Static Files
+Webpack comes automatically with express. 
+
+The location of the public dir is not fixed. Webpack looks for it from the current directory. Not ideal. We want the fix the public directory to the project root. so we add the static option. 
