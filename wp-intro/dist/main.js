@@ -1,2 +1,2 @@
-(()=>{"use strict";!function(e,n){let t=document.createElement("h1");t.innerText="inner text from info.js",document.body.append(t)}()})();
+(()=>{"use strict";!function(e,n){let t=document.createElement("h1");t.innerText="inner text from info.js updatedhbsdfgh",document.body.append(t)}(),console.log("msg from apple")})();
 //# sourceMappingURL=main.js.map

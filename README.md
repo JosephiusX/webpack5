@@ -71,3 +71,5 @@ Change index.html back into entry and setup some basic webpack.configuration.
         touch src/createElem.js
         touch src/info.js
         touch webpack.config.js
+
+4. Webpack Watch & WatchOptions
