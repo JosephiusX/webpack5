@@ -96,4 +96,5 @@ Lets create a second entry point in src named "entryTwo.js
 
     in root:
         touch src/entryTwo.js
-        
+
+9. Tree Shaking

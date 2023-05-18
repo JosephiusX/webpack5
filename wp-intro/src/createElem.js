@@ -4,5 +4,6 @@ export function createElem(tag,innerText) {
   document.body.append(elem)
 }
 
-import shared from './shared.js'
-console.log(shared)
+export function deadCode() {
+  return 'deadCodeTreeShaking'
+}
