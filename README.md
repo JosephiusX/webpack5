@@ -98,3 +98,5 @@ Lets create a second entry point in src named "entryTwo.js
         touch src/entryTwo.js
 
 9. Tree Shaking
+
+10. Side Effects - codes that are defined in the module but not exported, to be executed automatically 

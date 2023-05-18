@@ -2,9 +2,12 @@ const path = require('path')
 
 module.exports = {
     context:path.resolve(__dirname,'src'),
-    mode:'development',
+    mode:'production', // treeShaking prod. mode
     devtool:'inline-source-map',
     entry:'./entry.js',
+    optimization:{
+      sideEffects:false
+    },
     output:{
         clean:true,
         filename:'[name].js',

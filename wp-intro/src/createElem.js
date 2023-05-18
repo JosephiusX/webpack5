@@ -4,6 +4,6 @@ export function createElem(tag,innerText) {
   document.body.append(elem)
 }
 
-export function deadCode() {
-  return 'deadCodeTreeShaking'
-}
+// export function deadCode() {
+//   return 'deadCodeTreeShaking'
+// }
