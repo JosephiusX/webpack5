@@ -109,8 +109,10 @@ Lets create a second entry point in src named "entryTwo.js
 
 13. splitChuncksPlugin
 
-14. htmlWebpackPlugin
+14. htmlWebpackPlugin - creates an html file and links the initial chunck
 
         npm i -D html-webpack-plugin
 
 require in config file. Then add the plugins array
+
+15. htmlWebpackPlugin: Multiple Pages
