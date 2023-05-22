@@ -105,3 +105,12 @@ Lets create a second entry point in src named "entryTwo.js
 11. ES6 Dynamic Module Crash Course
  had to globally install a http server instead of clicking on the icon for this to work.
 
+12. Lazy Loading
+
+13. splitChuncksPlugin
+
+14. htmlWebpackPlugin
+
+        npm i -D html-webpack-plugin
+
+require in config file. Then add the plugins array
