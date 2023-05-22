@@ -116,3 +116,5 @@ Lets create a second entry point in src named "entryTwo.js
 require in config file. Then add the plugins array
 
 15. htmlWebpackPlugin: Multiple Pages
+
+16. Webpack.ProvidePlugin
