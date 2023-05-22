@@ -66,6 +66,7 @@ Change index.html back into entry and setup some basic webpack.configuration.
         cd wp-intro
         npm init -y
         npm i -D webpack webpack-cli webpack-dev-server
+        npm i
         mkdir src public
         touch src/entry.js
         touch src/createElem.js
@@ -100,3 +101,7 @@ Lets create a second entry point in src named "entryTwo.js
 9. Tree Shaking
 
 10. Side Effects - codes that are defined in the module but not exported, to be executed automatically 
+
+11. ES6 Dynamic Module Crash Course
+ had to globally install a http server instead of clicking on the icon for this to work.
+
