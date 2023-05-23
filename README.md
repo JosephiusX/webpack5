@@ -118,3 +118,9 @@ require in config file. Then add the plugins array
 15. htmlWebpackPlugin: Multiple Pages
 
 16. Webpack.ProvidePlugin
+
+17. Webpack Asset Modules
+
+18. Asset
+
+19. Asset Modules Public Path
